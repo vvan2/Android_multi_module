@@ -14,7 +14,7 @@
 - Jetpack : DataBinding, Navigation 
 - Image : Glide 
 
-###Branch 관리
+### [Branch]
      `main > develop > feat(issue)`
 - 여기까지만 
      ``` 
@@ -26,8 +26,7 @@
      ```
 ---
 
- **Issue Convention **
-   ### [Issue 작성 가이드](https://puleugo.tistory.com/165#Issue)
+### [Issue Convention]
    - 담당자(Assignees)를 명시할 것
    - Task list 기능을 적극 활용할 것
    - 기능 관련 Issue라면 GitHub Project와 PR과 연동하여 진행상황 공유
@@ -35,8 +34,8 @@
   > 자세한 내용은 템플릿 참고
 ---
 
-**PR Convention **
-   ### [Pull Request 작성 가이드](https://puleugo.tistory.com/165#Pull-Request)
+
+### [Pull Request convention]
    - 제목은 '[#기능 번호] 변경 사항' 구조로 작성할 것
    - Issue와 연동할 것
       - 제목: **[Feat]** 핵심적인 부분만 간략하게 작성
@@ -46,7 +45,7 @@
    > **자주 커밋하고 PR은 300자를 넘지 않도록 주의**  
    > (짧은 간격으로 자주 PR)
 
-**Commit Convention**
+### [Commit convention]
 **제목 타입**: <type>
 
 - feat: 기능 (feature)
@@ -57,7 +56,7 @@
 - test: 테스트
 - chore: 관리(maintain), 핵심 내용은 아닌 잡일 등
 
-6. **Code Convention**
+### [Code convention]
 
 - 파일 소스명, package 통합
 - 메서드 , 변수명 통합
