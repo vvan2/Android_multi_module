@@ -1,6 +1,6 @@
 # 💻Front
 ## <HSU-CAPSTON>
-###⛳Sporty-UP⛳
+⛳Sporty-UP⛳
 
 ### 👨‍💻GitHub Convention
 
@@ -31,7 +31,7 @@
    - Task list 기능을 적극 활용할 것
    - 기능 관련 Issue라면 GitHub Project와 PR과 연동하여 진행상황 공유
    ### issue template > branch > pr template > merge 식으로 issue 관리가능
-  > 자세한 내용은 템플릿 참고
+
 ---
 
 
