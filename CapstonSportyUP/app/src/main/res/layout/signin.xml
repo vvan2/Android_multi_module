@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     >
 
 
@@ -26,8 +27,7 @@
         android:layout_marginTop="108dp"
         android:src="@drawable/logo2"
         app:layout_constraintStart_toEndOf="@+id/loginTitle"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraitStart_toStartof="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
@@ -59,42 +59,69 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        app:hintTextColor="@color/main"
+        app:helperTextTextColor="@color/main"
+        android:backgroundTint="@color/main"
         android:id="@+id/emailLoginInputLayout"
         android:layout_width="0dp"
+        android:textColorHint="@color/Gray7"
         android:layout_height="wrap_content"
-        android:hint="이메일"
+        android:hint="이메일을 입력해주세요"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginTitle"
-        android:layout_marginHorizontal="24dp">
+        android:layout_marginHorizontal="24dp"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="@dimen/radius_button"
+        app:boxCornerRadiusTopEnd="@dimen/radius_button"
+        app:boxCornerRadiusBottomStart="@dimen/radius_button"
+        app:boxCornerRadiusBottomEnd="@dimen/radius_button"
+        app:boxStrokeColor="@color/white"
+        app:boxBackgroundColor="@color/Gray8">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailLoginEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/strokecolor" />
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@null"
+            android:drawableTint="@color/main"
+            android:foregroundTint="@color/main"
+            android:background="@drawable/main_button_color"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-
-
     <com.google.android.material.textfield.TextInputLayout
+        app:hintTextColor="@color/main"
+        android:backgroundTint="@color/main"
         android:id="@+id/passwordLoginInputLayout"
         android:layout_width="0dp"
+        android:textColorHint="@color/Gray7"
         android:layout_height="wrap_content"
-        android:hint="비밀번호"
+        android:hint="비밀번호를 입력해주세요"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailLoginInputLayout"
-        android:layout_marginHorizontal="24dp">
+        android:layout_marginHorizontal="24dp"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="@dimen/radius_button"
+        app:boxCornerRadiusTopEnd="@dimen/radius_button"
+        app:boxCornerRadiusBottomStart="@dimen/radius_button"
+        app:boxCornerRadiusBottomEnd="@dimen/radius_button"
+        app:boxStrokeColor="@color/Gray7"
+        app:boxBackgroundColor="@color/Gray8"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordLoginEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:drawableTint="@color/main"
+            android:foregroundTint="@color/main"
             android:inputType="textPassword"
-            android:background="@color/strokecolor"/>
+            android:background="@drawable/main_button_color"/>
+
     </com.google.android.material.textfield.TextInputLayout>
 
 
