@@ -1,20 +1,8 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+# Default ignored files
+/shelf/
+/workspace.xml
 
-# === Android 관련 불필요한 파일 ===
+# Android build artifacts
 android/app/build/
 android/.gradle/
 android/.idea/
@@ -26,7 +14,7 @@ android/app/ndkBuild/
 android/app/gradle/
 android/app/release/
 
-# === Kotlin/Java 컴파일 캐시 ===
+# Kotlin/Java compile cache
 android/app/build/kotlin/
 android/app/build/kotlin/**/*
 android/app/build/kotlin/compileReleaseKotlin/
@@ -34,7 +22,7 @@ android/app/build/kotlin/compileDebugKotlin/
 android/app/build/kotlin/cacheable/
 android/app/build/kotlin/cacheable/**/*
 
-# === Gradle 설정 관련 ===
+# Gradle files
 *.iml
 .gradle/
 local.properties
@@ -45,7 +33,7 @@ local.properties
 .gradle/
 build/
 
-# === Flutter 관련 ===
+# Flutter related files
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
@@ -54,5 +42,6 @@ build/
 android/fastlane/report.xml
 android/fastlane/metadata/android/
 
-# === macOS 및 시스템 파일 ===
+# Other cache
+**/build/
 **/.DS_Store
