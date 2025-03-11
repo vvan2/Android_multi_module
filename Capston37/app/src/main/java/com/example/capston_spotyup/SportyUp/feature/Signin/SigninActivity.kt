@@ -1,6 +1,6 @@
-package com.example.capston_spotyup.Signin
+package com.example.capston_spotyup.SportyUp.feature.Signin
 
-import com.example.capston_spotyup.Main.MainActivity
+import com.example.capston_spotyup.SportyUp.feature.Main.MainActivity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

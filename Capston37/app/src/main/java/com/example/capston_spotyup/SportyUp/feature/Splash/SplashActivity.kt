@@ -1,4 +1,4 @@
-package com.example.capston_spotyup.Splash
+package com.example.capston_spotyup.SportyUp.feature.Splash
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.capston_spotyup.R
-import com.example.capston_spotyup.Signin.SigninActivity
+import com.example.capston_spotyup.SportyUp.feature.Signin.SigninActivity
 
 class SplashActivity : AppCompatActivity() {
 

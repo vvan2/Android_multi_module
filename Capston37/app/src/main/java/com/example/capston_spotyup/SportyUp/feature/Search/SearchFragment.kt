@@ -1,4 +1,4 @@
-package com.example.capston_spotyup.Search.View
+package com.example.capston_spotyup.SportyUp.feature.Search
 
 import android.os.Bundle
 import android.view.LayoutInflater
