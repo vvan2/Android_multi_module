@@ -1,79 +1,164 @@
-# 💻Front
-## <HSU-CAPSTON>
-⛳Sporty-UP⛳
+# 📌 안드로이드 코드 리팩토링 핵심 가이드
 
-### 👨‍💻GitHub Convention
+## ✅ 1️⃣ 코드 구조 개선 (Clean Architecture 적용)
 
+### 🔹 리팩토링 포인트
+- **모듈화(Modularization)**: UI, 데이터, 도메인 계층 분리 → 유지보수성 향상
+- **MVVM (Model-View-ViewModel) 패턴 적용**: UI 로직을 ViewModel로 분리
+- **UseCase 적용**: 비즈니스 로직을 재사용 가능하게 분리
 
-**Category**  **TechStack** 
-- Tool : Android Studio, flutter
-- Language : kotlin
-- Network : Retrofit, OkHttp, Gson 
-- Service : Service 
-- Asynchronous : Coroutines 
-- Jetpack : DataBinding, Navigation 
-- Image : Glide 
+### 🔹 프로젝트 구조 예시
+```
+app/
+ ├── data/  → API, DB 관련 로직 (Retrofit, Room 등)
+ ├── domain/  → UseCase, Repository Interface
+ ├── presentation/  → UI 관련 코드 (Activity, Fragment, ViewModel)
+ ├── di/  → Hilt 의존성 주입 관련 코드
+```
 
-### [Branch]
-     `main > develop > feat(issue)`
-- 여기까지만 
-     ``` 
-     master: 라이브 서버에 제품으로 출시되는 브랜치.
-     develop: 다음 출시 버전을 대비하여 개발하는 브랜치.
-     feature: 추가 기능 개발 브랜치. develop 브랜치에 들어간다.
-     release: 다음 버전 출시를 준비하는 브랜치. develop 브랜치를 release 브랜치로 옮긴 후 QA, 테스트를 진행하고 master 브랜치로 합친다.
-     hotfix: master 브랜치에서 발생한 버그를 수정하는 브랜치.
-     ```
----
+### 🔹 ViewModel 적용 예제
+```kotlin
+class MainViewModel(private val repository: UserRepository) : ViewModel() {
+    private val _user = MutableLiveData<User>()
+    val user: LiveData<User> = _user
 
-### [Issue Convention]
-   - 담당자(Assignees)를 명시할 것
-   - Task list 기능을 적극 활용할 것
-   - 기능 관련 Issue라면 GitHub Project와 PR과 연동하여 진행상황 공유
-   ### issue template > branch > pr template > merge 식으로 issue 관리가능
+    fun fetchUser(userId: String) {
+        viewModelScope.launch {
+            _user.value = repository.getUser(userId)
+        }
+    }
+}
+```
 
 ---
 
+## ✅ 2️⃣ UI 코드 정리 (XML & Jetpack Compose 최적화)
 
-### [Pull Request convention]
-   - 제목은 '[#기능 번호] 변경 사항' 구조로 작성할 것
-   - Issue와 연동할 것
-      - 제목: **[Feat]** 핵심적인 부분만 간략하게 작성
-   - 내용: 간결하게 리스트 방식으로 정리
-   - 라벨: `FE`, `BE`, `기능추가`, `리팩토링`, `레이아웃`, `에러`
+### 🔹 XML 정리
+- **ConstraintLayout 사용** → 중첩 레이아웃 최소화
+- **스타일, 테마 적용** → `styles.xml`에서 관리
 
-   > **자주 커밋하고 PR은 300자를 넘지 않도록 주의**  
-   > (짧은 간격으로 자주 PR)
+```xml
+<style name="PrimaryButton">
+    <item name="android:background">#6200EE</item>
+    <item name="android:textColor">#FFFFFF</item>
+</style>
+```
 
-### [Commit convention]
-**제목 타입**: <type>
+### 🔹 Jetpack Compose 적용
+```kotlin
+@Composable
+fun UserCard(user: User) {
+    Card(modifier = Modifier.padding(8.dp)) {
+        Column {
+            Text(user.name, style = MaterialTheme.typography.h6)
+            Text(user.email, style = MaterialTheme.typography.body1)
+        }
+    }
+}
+```
 
-- feat: 기능 (feature)
-- fix: 버그 수정
-- docs: 문서 작업 (documentation)
-- style: 포맷팅, 세미콜론 누락 등.
-- refactor: 리팩터링 : 결과의 변경 없이 코드의 구조를 재조정
-- test: 테스트
-- chore: 관리(maintain), 핵심 내용은 아닌 잡일 등
-
-### [Code convention]
-
-- 파일 소스명, package 통합
-- 메서드 , 변수명 통합
-- solid pattern 결정 후 구조화
-
-### xml 작성시
-### kotlin 작성시
-
->> 추가사항 계속 작성 요망
-
-7. Android Studio, targetSDK, minSDK version 통일 
-- Android Studio → 정해야됨
-- targetSdk→ 34
-- midSdk → 28
-- jvmTarget = 1.8
-
-8. IDE -> emulator or device 결정
-- device 기준 pixel 고정 후 작업
 ---
 
+## ✅ 3️⃣ 성능 최적화 (메모리 & 네트워크 최적화)
+
+### 🔹 메모리 최적화
+- **불필요한 `context` 참조 제거** (메모리 누수 방지)
+- **이미지 최적화** (Glide 사용, 크기 조절)
+
+```kotlin
+Glide.with(context).load(imageUrl).into(imageView)
+```
+
+### 🔹 네트워크 최적화
+- **Retrofit & OkHttp 캐싱 적용**
+- **불필요한 API 호출 줄이기 (Flow, LiveData 활용)**
+
+```kotlin
+interface ApiService {
+    @GET("users/{id}")
+    suspend fun getUser(@Path("id") id: String): Response<User>
+}
+```
+
+---
+
+## ✅ 4️⃣ 안전한 코드 작성 (Null Safety & 예외 처리)
+
+### 🔹 Null Safety 적용
+- **Nullable 변수 처리 (`?.`, `!!`)**
+- **`try-catch`로 예외 처리**
+
+```kotlin
+fun getUserName(user: User?): String {
+    return user?.name ?: "Unknown"
+}
+```
+
+---
+
+## ✅ 5️⃣ 코드 가독성 개선 (Naming, Extension, KTX 활용)
+
+### 🔹 올바른 네이밍 규칙
+- **View 요소** → `btnLogin`, `txtUserName`
+- **LiveData 변수** → `_userList`, `userList`
+
+### 🔹 확장 함수(Extension) 활용
+```kotlin
+fun ImageView.load(url: String) {
+    Glide.with(this.context).load(url).into(this)
+}
+
+imageView.load("https://example.com/image.jpg")
+```
+
+---
+
+## ✅ 6️⃣ 의존성 관리 (DI 적용: Hilt or Koin)
+
+### 🔹 Hilt 적용 예제
+```kotlin
+@Module
+@InstallIn(SingletonComponent::class)
+object NetworkModule {
+    @Provides
+    fun provideRetrofit(): Retrofit {
+        return Retrofit.Builder()
+            .baseUrl("https://api.example.com/")
+            .build()
+    }
+}
+```
+
+---
+
+## ✅ 7️⃣ 테스트 코드 작성 (단위 테스트, UI 테스트)
+
+### 🔹 단위 테스트 (JUnit + Mockito)
+```kotlin
+@RunWith(MockitoJUnitRunner::class)
+class UserRepositoryTest {
+    @Mock
+    lateinit var apiService: ApiService
+
+    @Test
+    fun testGetUser() = runBlocking {
+        val user = User("John", "john@example.com")
+        `when`(apiService.getUser("1")).thenReturn(Response.success(user))
+
+        val result = apiService.getUser("1").body()
+        assertEquals("John", result?.name)
+    }
+}
+```
+
+### 🔹 UI 테스트 (Espresso)
+```kotlin
+@Test
+fun testLoginButton_click() {
+    onView(withId(R.id.btnLogin)).perform(click())
+    onView(withText("로그인 성공")).check(matches(isDisplayed()))
+}
+```
+
+---
