@@ -1,4 +1,4 @@
-package com.example.capston_spotyup
+package com.example.capston_spotyup.SportyUp.feature.Camera
 
 import android.Manifest
 import android.content.ContentValues
@@ -22,21 +22,11 @@ import androidx.camera.video.VideoRecordEvent
 import androidx.camera.view.PreviewView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.capston_spotyup.Map.DTO.Response.BowlingResponse
-import com.example.capston_spotyup.Network.RetrofitClient
 import com.example.capston_spotyup.databinding.ActivityCameraBinding
-import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import okhttp3.MultipartBody
-import okhttp3.RequestBody.Companion.asRequestBody
-import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-
 
 
 class CameraActivity : AppCompatActivity() {

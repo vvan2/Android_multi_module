@@ -1,4 +1,4 @@
-package com.example.capston_spotyup.Map.DTO.Request
+package com.example.capston_spotyup.SportyUp.data.DTO.Request
 
 import java.io.File
 

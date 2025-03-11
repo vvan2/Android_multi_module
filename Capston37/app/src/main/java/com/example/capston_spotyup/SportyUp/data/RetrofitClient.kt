@@ -1,6 +1,6 @@
-package com.example.capston_spotyup.Network
+package com.example.capston_spotyup.SportyUp.data
 
-import com.example.capston_spotyup.Map.Api.BowlingApi
+import com.example.capston_spotyup.SportyUp.data.Service.BowlingApi
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

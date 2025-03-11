@@ -1,4 +1,4 @@
-package com.example.capston_spotyup.Main
+package com.example.capston_spotyup.SportyUp.feature.Main
 
 import android.app.AlertDialog
 import android.content.Intent
@@ -8,12 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.capston_spotyup.ProfileFragment
 import com.example.capston_spotyup.R
-import com.example.capston_spotyup.Search.View.SearchFragment
+import com.example.capston_spotyup.SportyUp.feature.Camera.CameraActivity
+import com.example.capston_spotyup.SportyUp.feature.Search.SearchFragment
 import com.example.capston_spotyup.databinding.ActivityMainBinding
 import com.example.capston_spotyup.databinding.MainDialogBinding
 import com.example.sportyup.FragmentHome
-import com.example.capston_spotyup.CameraActivity
-import com.example.capston_spotyup.Map.MapFragment
+import com.example.capston_spotyup.SportyUp.feature.Map.MapFragment
 
 class MainActivity : AppCompatActivity() {
 

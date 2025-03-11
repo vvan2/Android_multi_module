@@ -10,7 +10,7 @@
 //import android.widget.Toast
 //import androidx.appcompat.app.AppCompatActivity
 //import androidx.fragment.app.Fragment
-//import com.example.capston_spotyup.Network.RetrofitClient
+//import com.example.capston_spotyup.SportyUp.data.RetrofitClient
 //import com.example.capston_spotyup.Map.DTO.Response.BowlingResponse
 //import com.example.capston_spotyup.databinding.FragmentMapBinding
 //import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -107,7 +107,7 @@
 //        _binding = null
 //    }
 //}
-package com.example.capston_spotyup.Map
+package com.example.capston_spotyup.SportyUp.feature.Map
 
 import android.media.MediaPlayer
 import android.net.Uri
@@ -120,8 +120,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.capston_spotyup.Network.RetrofitClient
-import com.example.capston_spotyup.Map.DTO.Response.BowlingResponse
+import com.example.capston_spotyup.SportyUp.data.RetrofitClient
+import com.example.capston_spotyup.SportyUp.data.DTO.Response.BowlingResponse
 import com.example.capston_spotyup.databinding.FragmentMapBinding
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody

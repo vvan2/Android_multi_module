@@ -1,6 +1,6 @@
-package com.example.capston_spotyup.Map.Api
+package com.example.capston_spotyup.SportyUp.data.Service
 
-import com.example.capston_spotyup.Map.DTO.Response.BowlingResponse
+import com.example.capston_spotyup.SportyUp.data.DTO.Response.BowlingResponse
 import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.http.Multipart
