@@ -68,6 +68,12 @@ dependencies {
     implementation ("com.squareup.okhttp3:okhttp:4.9.3")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
 
+    // Jetpack Compose
+    implementation("androidx.compose.ui:ui:1.5.3")
+    implementation("androidx.compose.material3:material3:1.1.2")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.5.3")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.5.3")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
