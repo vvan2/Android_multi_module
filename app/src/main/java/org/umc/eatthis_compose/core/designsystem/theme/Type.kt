@@ -1,4 +1,4 @@
-package org.umc.eatthis_compose.ui.theme
+package org.umc.eatthis_compose.core.designsystem.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

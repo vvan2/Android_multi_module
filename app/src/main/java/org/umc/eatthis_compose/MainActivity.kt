@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import org.umc.eatthis_compose.ui.theme.Eatthis_composeTheme
+import org.umc.eatthis_compose.core.designsystem.theme.Eatthis_composeTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
