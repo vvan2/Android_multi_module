@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Eatthis_compose</string>
+    <string name="content_description_map">지도</string>
+    <string name="content_description_home">홈</string>
+    <string name="content_description_analyze">분석</string>
+    <string name="content_description_mypage">마이</string>
+
 </resources>
