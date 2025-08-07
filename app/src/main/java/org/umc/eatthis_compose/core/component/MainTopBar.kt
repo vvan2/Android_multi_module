@@ -1,4 +1,4 @@
-package org.umc.eatthis_compose.core.designsystem.component
+package org.umc.eatthis_compose.core.component
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
