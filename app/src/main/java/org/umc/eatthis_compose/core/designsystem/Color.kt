@@ -1,16 +1,20 @@
-package org.umc.eatthis_compose.core.designsystem.theme
+package org.umc.eatthis_compose.core.designsystem
 
+import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.Stable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 
-val Orange0 = Color(0xFFFFF1E6)
-val Orange50 = Color(0XFFFFEAD9)
-val Orange100 = Color(0xFFFFD4B0)
-val Orange150 = Color(0xFFFF9838)
-val Orange175 = Color(0xFFFF852D)
-val Orange200 = Color(0xFFFF7300)
-val Orange300 = Color(0xFFFF5A00)
+val Blue0 = Color(0xFFE8EFFD)
+val Blue50 = Color(0xFFDDE7FC)
+val Blue100 = Color(0xFFB9CDFa)
+val Blue150 = Color(0xFF1C5EEE)
+val Blue200 = Color(0xFF1955D6)
+val Blue250 = Color(0xFF164BBE)
+val Blue300 = Color(0xFF1547B3)
+val Blue350 = Color(0xFF11388F)
+val Blue400 = Color(0xFF0D2A6B)
+val Blue450 = Color(0xFF0A2153)
 
 
 val Gray5 = Color(0xFFFCFCFC)
@@ -28,15 +32,18 @@ val Gray900 = Color(0xFF292929)
 val Gray950 = Color(0xFF161616)
 
 
-@Stable
+@Immutable
 data class EatThisColors(
-    val orange0: Color = Orange0,
-    val orange50: Color = Orange50,
-    val orange100: Color = Orange100,
-    val orange150: Color = Orange150,
-    val orange175: Color = Orange175,
-    val orange200: Color = Orange200,
-    val orange300: Color = Orange300,
+    val blue0: Color = Blue0,
+    val blue50: Color = Blue50,
+    val blue100: Color = Blue100,
+    val blue150: Color = Blue150,
+    val blue200: Color = Blue200,
+    val blue250: Color = Blue250,
+    val blue300: Color = Blue300,
+    val blue350: Color = Blue350,
+    val blue400: Color = Blue400,
+    val blue450: Color = Blue450,
 
     val gray5: Color = Gray5,
     val gray25: Color = Gray25,
@@ -54,13 +61,16 @@ data class EatThisColors(
 )
 
 val defaultEatThisColors = EatThisColors(
-    orange0 = Orange0,
-    orange50 = Orange50,
-    orange100 = Orange100,
-    orange150 = Orange150,
-    orange175 = Orange175,
-    orange200 = Orange200,
-    orange300 = Orange300,
+    blue0 = Blue0,
+    blue50 = Blue50,
+    blue100 = Blue100,
+    blue150 = Blue150,
+    blue200 = Blue200,
+    blue250 = Blue250,
+    blue300 = Blue300,
+    blue350 = Blue350,
+    blue400 = Blue400,
+    blue450 = Blue450,
 
     gray5 = Gray5,
     gray25 = Gray25,
