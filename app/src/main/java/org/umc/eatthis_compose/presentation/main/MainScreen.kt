@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import org.umc.eatthis_compose.presentation.main.component.MainBottomBar
 
@@ -58,7 +59,7 @@ private fun MainScreenContent(
         )
 
         MainBottomBar(
-
+            modifier = Modifier.align(Alignment.BottomCenter)
         )
 
     }

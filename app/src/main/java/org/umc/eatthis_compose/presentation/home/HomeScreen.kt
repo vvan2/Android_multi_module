@@ -1,6 +1,7 @@
 package org.umc.eatthis_compose.presentation.home
 
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
@@ -26,5 +27,8 @@ fun HomeScreen(
     navigateNext:()-> Unit,
     modifier: Modifier = Modifier
 ) {
+    LazyColumn (
+
+    ){  }
 
 }
