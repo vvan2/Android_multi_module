@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "org.umc.eatthis_compose.app-debug-70:/font_pretendard_medium.otf.flat",
+        "source": "org.umc.eatthis_compose.app-main-72:/font/pretendard_medium.otf"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "org.umc.eatthis_compose.app-debug-70:/font_pretendard_regular.otf.flat",
+        "source": "org.umc.eatthis_compose.app-main-72:/font/pretendard_regular.otf"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "org.umc.eatthis_compose.app-debug-70:/font_pretendard_semibold.otf.flat",
+        "source": "org.umc.eatthis_compose.app-main-72:/font/pretendard_semibold.otf"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "org.umc.eatthis_compose.app-debug-70:/font_pretendard_bold.otf.flat",
+        "source": "org.umc.eatthis_compose.app-main-72:/font/pretendard_bold.otf"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-debug-70:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\wndhk\\.gradle\\daemon\\8.11.1\\org.umc.eatthis_compose.app-main-72:\\mipmap-xhdpi\\ic_launcher.webp"
+    }
+]

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.kotlinx:kotlinx-collections-immutable-jvm:0.3.7" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.jetbrains.kotlinx" artifactId="kotlinx-collections-immutable-jvm" version="0.3.7" baseVersion="0.3.7" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-collections-immutable-jvm/0.3.7/1cd4ff7059bcb437086b76311a9fc4775a887bcc/kotlinx-collections-immutable-jvm-0.3.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-collections-immutable-jvm/0.3.7/a2e98922306a6db3fbf483912fe35a441b93edc6/kotlinx-collections-immutable-jvm-0.3.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-collections-immutable-jvm/0.3.7/728de6e0d957ceab720685caa1c5ec5a73cb9510/kotlinx-collections-immutable-jvm-0.3.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
